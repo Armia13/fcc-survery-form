@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="title"> Customer Feedback Survey</h1>
+  <div id="box">
+    <p id="description">Please let us know about your experience with our product and service.</p>
+    <form id="survey-form">
+      <div id="enter-name"><label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" class="input-box" placeholder=" Please Enter Your Name" autofocus required>
+      </div>
+      <div id="age"><label id="number-label" for="age">Enter you age:</label>
+        <input type="number" id="number" class="input-box" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+      <label for="yes-no">Is this the first time you are using our Products and services?</label>
+      <select id="dropdown" class="dropdown" name="usage">
+                    <option>Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+      <div id="label">
+        <ul><label for="userRating">Would you recommend it to your friends and colleagues?</label>
+          <li><input name="radio-buttons" value="1" type="radio" class="userRatings">Definitely
+          </li>
+          <li><input name="radio-buttons" value="2" type="radio" class="userRatings">Maybe</li>
+          <li><input name="radio-buttons" value="3" type="radio" class="userRatings">Not sure</li>
+        </ul>
+      </div>
+
+      <div id="label">
+        <ul>
+          <label for="userRating">How satisfied are you with our company overall?</label>
+          <li><input name="radio-buttons" value="1" type="radio" class="userRatings">Satisfied <i class="fas fa-smile"></i></li>
+          <li><input name="radio-buttons" value="2" type="radio" class="userRatings">Undecided <i class="fas fa-meh"></i> </li>
+          <li><input name="radio-buttons" value="3" type="radio" class="userRatings">Unsatisfied <i class="fas fa-frown"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="label">
+        <label for="marketing">How did you hear about our product?
+                    </label>
+        <ul>
+          <li class="checkbox"><input name="ad" value="1" type="checkbox" class="userRatings">Social Media
+          </li>
+          <li class="checkbox"><input name="ad" value="2" type="checkbox" class="userRatings">Advertising
+          </li>
+          <li class="checkbox"><input name="ad" value="3" type="checkbox" class="userRatings">Search Engine Result</li>
+          <li class="checkbox"><input name="ad" value="4" type="checkbox" class="userRatings">Friend</li>
+          <li class="checkbox"><input name="ad" type="text" class="input-box" class="userRatings" placeholder="Other">
+        </ul>
+      </div>
+
+      <div id="enter-email">
+        <label for="email" id="email-label">Please leave your email address if you would like us to contact
+                        you
+                        regarding any questions:</label>
+        <input id="email" type="email" class="input-box" placeholder="Enter your Email" required>
+      </div>
+
+      <div id="label">
+        <label for="comments">Do you have any suggestions to improve our product and service?</label>
+        <textarea id="comments" class="input-field" name="comment" placeholder="Enter your suggestions here..."></textarea>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
